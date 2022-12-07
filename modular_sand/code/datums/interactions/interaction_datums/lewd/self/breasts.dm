@@ -28,7 +28,7 @@
 		user.visible_message("<span class='lewd'><b>\The [user]</b> [pick("дрожит от возбуждения.",
 				"тихо стонет.",
 				"выдыхает тихий довольный стон.",
-				"мурлыкая, звучно вздыхает.",
+				"мурлыкает и звучно вздыхает.",
 				"тихонько вздрагивает.",
 				"вздрагивает, хватаясь за причинное место.")]</span>")
 	user.visible_message(message = "<span class='lewd'><b>\The [user]</b> [message]</span>", ignored_mobs = user.get_unconsenting())

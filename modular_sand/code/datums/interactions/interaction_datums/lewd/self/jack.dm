@@ -1,5 +1,5 @@
 /datum/interaction/lewd/jack
-	description = "Jerk yourself off."
+	description = "Подрочить."
 	interaction_sound = null
 	require_user_hands = TRUE
 	require_user_penis = REQUIRE_EXPOSED
@@ -15,10 +15,10 @@
 	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(user, CUM_TARGET_HAND))
-		message = "[pick("jerks [t_Him]self off.",
-			"works [t_His] shaft.",
-			"strokes [t_His] [genital_name].",
-			"wanks [t_His] [genital_name] hard.")]"
+		message = "[pick("хватается за свой член и начинает его наяривать.",
+			"настойчиво устраивает 'одиночный пикет' и на пороге 'карманного митинга'.",
+			"дёргает своё мясо.",
+			"активно теребит свой орган не без помощи своих ладоней")]"
 	else
 		message = "[pick("wraps [t_His] hand around [t_His] [genital_name].",
 			"starts to stroke [t_His] [genital_name].",
