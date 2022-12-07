@@ -8,7 +8,7 @@
 ## To speed things up make the number negative, to slow things down, make the number positive.
 
 ## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
-RUN_DELAY 1.5
+RUN_DELAY 2
 WALK_DELAY 4
 
 ## The variables below affect the movement of specific mob types. THIS AFFECTS ALL SUBTYPES OF THE TYPE YOU CHOOSE!
@@ -50,7 +50,7 @@ SPRINT_ABSOLUTE_MAX_TILES 13
 SPRINT_BUFFER_MAX 24
 
 ## Stamina/tile when bufer empty
-SPRINT_STAMINA_COST 1.4
+SPRINT_STAMINA_COST 5
 
 ## Buffer regen/decisecond - 0.4 = 4/second
 SPRINT_BUFFER_REGEN_PER_DS 0.4
