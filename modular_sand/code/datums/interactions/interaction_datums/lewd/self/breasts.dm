@@ -13,25 +13,25 @@
 	var/t_His = user.p_their()
 
 	if(user.a_intent == INTENT_HARM)
-		message = "[pick("aggressively gropes [t_His] breast.",
-					"grabs [t_His] breasts.",
-					"tightly squeezes [t_His] breasts.",
-					"slaps at [t_His] breasts.",
-					"gropes [t_His] breasts roughly.")]"
+		message = "[pick("[u_His] с силой сжимает свои собственные груди.",
+					"[u_His] резко хватается за свои сиськи.",
+					"[u_His] крепко сжимает свою грудь.",
+					"[u_His] шлёпает по своим сиськам.",
+					"[u_His] максимально грубо сжимает свои груди.")]"
 	else
-		message = "[pick("gently gropes [t_His] breast.",
-					"softly squeezes [t_His] breasts.",
-					"grips [t_His] breasts.",
-					"runs a few fingers over [t_His] breast.",
-					"delicately teases [t_His] nipple.",
-					"traces a touch across [t_His] breast.")]"
+		message = "[pick("[u_His] нежно ощупывает свою грудь.",
+					"[u_His] мягко хватается за свои груди.",
+					"[u_His] сжимает собственную грудь.",
+					"[u_His] проводит несколькими пальцами вдоль своей груди.",
+					"[u_His] деликатно сжимает свой сосок.",
+					"[u_His] возбуждённо проводит пальцем вдоль своей груди.")]"
 	if(prob(5 + user.get_lust()))
-		user.visible_message("<span class='lewd'><b>\The [user]</b> [pick("shivers in arousal.",
-				"moans quietly.",
-				"breathes out a soft moan.",
-				"gasps.",
-				"shudders softly.",
-				"trembles as [t_His] hands run across bare skin.")]</span>")
+		user.visible_message("<span class='lewd'><b>\The [user]</b> [pick("дрожит от возбуждения.",
+				"тихо стонет.",
+				"выдыхает тихий довольный стон.",
+				"мурлыкая, звучно вздыхает.",
+				"тихонько вздрагивает.",
+				"вздрагивает, хватаясь за причинное место.")]</span>")
 	user.visible_message(message = "<span class='lewd'><b>\The [user]</b> [message]</span>", ignored_mobs = user.get_unconsenting())
 	playlewdinteractionsound(get_turf(user), 'modular_sand/sound/interactions/squelch1.ogg', 50, 1, -1)
 	user.handle_post_sex(NORMAL_LUST, CUM_TARGET_HAND, user)

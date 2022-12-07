@@ -22,10 +22,10 @@
 
 	if(user.is_fucking(partner, CUM_TARGET_EYES))
 		message = "[pick(
-			"pounds into \the <b>[partner]</b>'s [partner.has_eyes() ? "eye":"eyesocket"].",
-			"shoves [u_His] [genital_name] deep into \the <b>[partner]</b>'s skull",
-			"thrusts in and out of \the <b>[partner]</b>'s [partner.has_eyes() ? "eye":"eyesocket"].",
-			"goes balls deep into \the <b>[partner]</b>'s cranium over and over again.")]"
+			"крепко обхватывает голову \the <b>[partner]</b>'s и начинает долбиться в глаз.",
+			"яростно долбится в череп \the <b>[partner]</b>'s и довольно стонет.",
+			"раз за разом толкается в образованную дыру в глазу \the <b>[partner]</b>'s.",
+			"заходит своим влажным органом по самые яйца в череп \the <b>[partner]</b>'s снова и снова.")]"
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
