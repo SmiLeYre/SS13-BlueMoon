@@ -1,5 +1,5 @@
 /datum/interaction/lewd/eyefuck
-	description = "Fuck their eye."
+	description = "Изнасиловать в глаз."
 	interaction_sound = null
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_eyes = REQUIRE_EXPOSED

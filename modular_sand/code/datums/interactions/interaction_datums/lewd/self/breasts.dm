@@ -1,5 +1,5 @@
 /datum/interaction/lewd/titgrope_self
-	description = "Grope your own breasts."
+	description = "Сжать свои груди."
 	require_user_hands = TRUE
 	require_user_breasts = REQUIRE_ANY
 	user_is_target = TRUE
@@ -10,7 +10,6 @@
 
 /datum/interaction/lewd/titgrope_self/display_interaction(mob/living/user)
 	var/message
-	var/t_His = user.p_their()
 
 	if(user.a_intent == INTENT_HARM)
 		message = "[pick("с силой сжимает свои собственные груди.",
@@ -38,7 +37,7 @@
 
 
 /datum/interaction/lewd/self_nipsuck
-	description = "Suck your own nips."
+	description = "Пососать свои собственные соски."
 	require_user_breasts = REQUIRE_EXPOSED
 	require_user_mouth = TRUE
 	user_is_target = TRUE
@@ -49,7 +48,6 @@
 
 /datum/interaction/lewd/self_nipsuck/display_interaction(mob/living/user, mob/living/target)
 	var/message
-	var/u_His = user.p_their()
 	var/obj/item/organ/genital/breasts/milkers = user.getorganslot(ORGAN_SLOT_BREASTS)
 	var/milktype = milkers?.fluid_id
 	var/modifier
@@ -63,9 +61,9 @@
 	var/milktext = milk.name
 
 	lines = list(
-		"brings [u_His] own milk tanks to [u_His] mouth and sucks deeply into them",
-		"takes a big sip of [u_His] own fresh [lowertext(milktext)]",
-		"fills [u_His] own mouth with a big gulp of [u_His] warm [lowertext(milktext)]"
+		"подносит соски своих собственных ёмкостей для молока ко рту и глубоко всасывает их",
+		"делает большой глоток свежего '[lowertext(milktext)]' и громко выдыхает после такого",
+		"хватается губами за свой сосок и полностью заполняет свою ротовую полость '[lowertext(milktext)]'"
 	)
 
 	message = "<span class='lewd'>\The <b>[user]</b> [pick(lines)]</span>"

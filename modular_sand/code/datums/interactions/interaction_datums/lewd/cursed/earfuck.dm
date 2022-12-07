@@ -1,5 +1,5 @@
 /datum/interaction/lewd/earfuck
-	description = "Fuck their ear."
+	description = "Изнасиловать в ухо."
 	interaction_sound = null
 	require_user_penis = REQUIRE_EXPOSED
 	require_target_ears = REQUIRE_EXPOSED
@@ -17,8 +17,6 @@
 
 /datum/interaction/lewd/earfuck/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	var/u_His = user.p_their()
-	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(partner, CUM_TARGET_EARS))
 		message = "[pick(
