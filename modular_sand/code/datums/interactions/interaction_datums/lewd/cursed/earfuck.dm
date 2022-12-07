@@ -22,9 +22,9 @@
 
 	if(user.is_fucking(partner, CUM_TARGET_EARS))
 		message = "[pick(
-			"долбится в ушную раковину \the <b>[partner]</b>'s [partner.has_ears() ? "ear":"earsocker"].",
-			"глубоко вводит свой [u_His] [genital_name] в череп \the <b>[partner]</b>'s",
-			"раз за разом толкается в ушную раковину \the <b>[partner]</b>'s [partner.has_ears() ? "ear":"eyesocket"].",
+			"долбится в ушную раковину \the <b>[partner]</b>'s.",
+			"резко и довольно глубоко вводит свой орган в череп \the <b>[partner]</b>'s",
+			"раз за разом толкается в ушную раковину \the <b>[partner]</b>'s.",
 			"заходит своим влажным органом по самые яйца в череп \the <b>[partner]</b>'s снова и снова.")]"
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
@@ -36,7 +36,7 @@
 					C.adjustOrganLoss(ORGAN_SLOT_EARS, rand(3,7))
 					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
 	else
-		message = "с силой загоняет свой [u_His] [genital_name] внутрь ушной раковины \the <b>[partner]</b>'s [partner.has_ears() ? "ear":"earsocket"]."
+		message = "с силой загоняет свой орган внутрь ушной раковины \the <b>[partner]</b>'s и громко вздыхает."
 		user.set_is_fucking(partner, CUM_TARGET_EARS, user.getorganslot(ORGAN_SLOT_PENIS))
 
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/champ1.ogg',

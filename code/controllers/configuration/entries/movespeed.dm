@@ -76,13 +76,13 @@
 	config_entry_value = 0
 
 /datum/config_entry/number/sprintless_off_balance_slowdown
-	config_entry_value = 0.85
+	config_entry_value = 0.50
 
 /datum/config_entry/number/melee_stagger_factor
 	config_entry_value = 1
 
 /datum/config_entry/number/movedelay/sprint_speed_increase
-	config_entry_value = 1
+	config_entry_value = 1.5
 
 /datum/config_entry/number/movedelay/sprint_max_tiles_increase
 	config_entry_value = 5
@@ -94,10 +94,10 @@
 	config_entry_value = 24
 
 /datum/config_entry/number/movedelay/sprint_stamina_cost
-	config_entry_value = 1.4
+	config_entry_value = 3
 
 /datum/config_entry/number/movedelay/sprint_buffer_regen_per_ds
-	config_entry_value = 0.4
+	config_entry_value = 0.5
 
 /////////////////////////////////////////////////Outdated move delay
 /datum/config_entry/number/outdated_movedelay
