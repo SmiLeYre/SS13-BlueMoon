@@ -138,7 +138,7 @@
 			if(prob(1) && istype(partner)) //Handled on modular_splurt
 				partner.adjustOxyLoss(10)
 		if(partner.a_intent == INTENT_HARM)
-				partner.adjustBruteLoss(5)
+			partner.adjustBruteLoss(5)
 			retaliation_message = pick(
 				"смотрит вверх из-под колен \the [user] и раз за разом пытается вывернуться в попытке выбраться.",
 				"пытается вырваться из-под ног \the [user].",
