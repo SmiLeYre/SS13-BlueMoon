@@ -79,7 +79,6 @@
 					improv = TRUE
 			if("penis")
 				if(partner.has_penis() || partner.has_strapon())
-					var/genital_name = partner.get_penetrating_genital_name()
 					message = pick(
 						"довольно отсасывает мясо \the <b>[partner]</b>, крепко удерживая орган рукой.",
 						"нежно проводит своим язычком вдоль всего органа \the <b>[partner]</b>.",

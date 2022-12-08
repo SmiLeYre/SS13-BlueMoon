@@ -10,9 +10,6 @@
 /datum/interaction/lewd/nuts/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	var/u_His = user.p_their()
-	var/t_His = partner.p_their()
-
 	var/lust_increase = 1
 
 	if(user.is_fucking(partner, NUTS_TO_FACE))
