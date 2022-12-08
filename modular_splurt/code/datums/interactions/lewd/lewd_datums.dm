@@ -406,7 +406,7 @@
 	playlewdinteractionsound(user, 'sound/items/bikehorn.ogg', 40, 1, -1)
 
 /datum/interaction/lewd/oral/suckvagself
-	description = "Lick your own pussy."
+	description = "Отлизать свою же киску."
 	interaction_sound = null
 	require_user_penis = REQUIRE_NONE
 	user_is_target = TRUE
