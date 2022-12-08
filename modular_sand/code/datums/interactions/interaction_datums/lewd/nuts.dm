@@ -1,5 +1,5 @@
 /datum/interaction/lewd/nuts
-	description = "Nuts to face."
+	description = "Потереться своими семенниками о лицо партнёра."
 	interaction_sound = null
 	require_user_balls = REQUIRE_EXPOSED
 	require_target_mouth = TRUE
@@ -35,7 +35,7 @@
 /datum/interaction/lewd/nut_smack
 	description = "Smack their nuts."
 	interaction_sound = 'modular_sand/sound/interactions/slap.ogg'
-	simple_message = "USER slaps TARGET's nuts!"
+	simple_message = "USER с ухмылкой бьёт семенники TARGET!"
 	require_target_balls = REQUIRE_EXPOSED
 	needs_physical_contact = TRUE
 	max_distance = 1

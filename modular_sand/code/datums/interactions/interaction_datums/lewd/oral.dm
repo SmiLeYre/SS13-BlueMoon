@@ -1,5 +1,5 @@
 /datum/interaction/lewd/oral
-	description = "Go down on them."
+	description = "Куннилингус."
 	require_user_mouth = TRUE
 	require_target_vagina = REQUIRE_EXPOSED
 	write_log_user = "gave head to"
@@ -9,7 +9,7 @@
 	var/fucktarget = "vagina"
 
 /datum/interaction/lewd/oral/blowjob
-	description = "Suck them off."
+	description = "Отсосать член своего партнёра."
 	require_target_vagina = null
 	require_target_penis = REQUIRE_EXPOSED
 	fucktarget = "penis"

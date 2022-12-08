@@ -1,5 +1,5 @@
 /datum/interaction/lewd/nipsuck
-	description = "Suck their nipples."
+	description = "Пососать соски своего партнёра."
 	require_target_breasts = REQUIRE_EXPOSED
 	require_user_mouth = TRUE
 	write_log_user = "sucked nipples"
@@ -124,16 +124,16 @@
 	if(target.a_intent == INTENT_GRAB)
 		user.visible_message(
 				pick("<span class='lewd'>\The <b>[target]</b> grips \the <b>[user]</b>'s head tight.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> digs nails into \the <b>[user]</b>'s scalp.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> grabs and shoves \the <b>[user]</b>'s head away.</span>"))
+				"<span class='lewd'>\The <b>[target]</b> digs nails into \the <b>[user]</b>'s scalp.</span>",
+				"<span class='lewd'>\The <b>[target]</b> grabs and shoves \the <b>[user]</b>'s head away.</span>"))
 	if(target.a_intent == INTENT_HARM)
 		user.adjustBruteLoss(1)
 		user.visible_message(
 				pick("<span class='lewd'>\The <b>[target]</b> slaps \the <b>[user]</b> away.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> scratches <b>[user]</b>'s face.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> fiercely struggles against <b>[user]</b>.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> claws <b>[user]</b>'s face, drawing blood.</span>",
-				 "<span class='lewd'>\The <b>[target]</b> elbows <b>[user]</b>'s mouth away.</span>"))
+				"<span class='lewd'>\The <b>[target]</b> scratches <b>[user]</b>'s face.</span>",
+				"<span class='lewd'>\The <b>[target]</b> fiercely struggles against <b>[user]</b>.</span>",
+				"<span class='lewd'>\The <b>[target]</b> claws <b>[user]</b>'s face, drawing blood.</span>",
+				"<span class='lewd'>\The <b>[target]</b> elbows <b>[user]</b>'s mouth away.</span>"))
 	target.dir = get_dir(target, user)
 	user.dir = get_dir(user, target)
 	playlewdinteractionsound(get_turf(user), pick('modular_sand/sound/interactions/oral1.ogg',
