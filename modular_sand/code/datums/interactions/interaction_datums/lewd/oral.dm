@@ -18,9 +18,6 @@
 	var/message
 	var/obj/item/organ/genital/genital = null
 	var/lust_increase = NORMAL_LUST
-	var/u_His = user.p_their()
-	var/u_He = user.p_they()
-	var/u_Were = user.p_theyre()
 
 	if(partner.is_fucking(user, CUM_TARGET_MOUTH))
 		if(prob(partner.get_sexual_potency()))
@@ -45,7 +42,6 @@
 						improv = TRUE
 				if("penis")
 					if(partner.has_penis() || partner.has_strapon())
-						var/genital_name = partner.get_penetrating_genital_name()
 						message = pick(
 							"довольно отсасывает мясо \the <b>[partner]</b>, крепко удерживая орган рукой.",
 							"нежно проводит своим язычком вдоль всего органа \the <b>[partner]</b>.",
@@ -61,7 +57,7 @@
 				// get confused about how to do the sex
 				message = pick(
 					"облизывает \the <b>[partner]</b>.",
-					"выглядит немного неуверенной в том, куда лизать \the <b>[partner]</b>.",
+					"выглядит немного неуверенно в том, куда лизать \the <b>[partner]</b>.",
 					"трётся своим язычком в промежности \the <b>[partner]</b> и оставляет после себя слюни.",
 					"целует бедро \the <b>[partner]</b> в лёгкой улыбке.",
 					"старательно водит своими губами вдоль промежности \the <b>[partner]</b>.",
@@ -97,12 +93,12 @@
 					improv = TRUE
 		if(improv)
 			message = pick(
-				"begins to lick \the <b>[partner]</b>.",
-				"starts kissing \the <b>[partner]</b>'s thigh.",
-				"sinks down between \the <b>[partner]</b>'s thighs.",
-				"briefly flashes a puzzled look from between \the <b>[partner]</b>'s legs.",
-				"looks unsure of how to handle \the <b>[partner]</b>'s lack of genitalia.",
-				"seems like [u_He] [u_Were] expecting \the <b>[partner]</b> to have a cock or a pussy or ... something.",
+				"облизывает \the <b>[partner]</b>.",
+				"целует бедро \the <b>[partner]</b> в лёгкой улыбке.",
+				"трётся своим язычком в промежности \the <b>[partner]</b> и оставляет после себя слюни.",
+				"бросает короткий и довольно озадаченный взгляд между бёдрами \the <b>[partner]</b>.",
+				"выглядит немного неуверенно в том, куда лизать \the <b>[partner]</b>. Как же быть в отсутствии гениталий?",
+				"хлопает глазами при взгляде в промежность \the <b>[partner]</b> и ожидает, что здесь будет член, киска... или что-то в этом роде.",
 			)
 			genital = null
 		else
