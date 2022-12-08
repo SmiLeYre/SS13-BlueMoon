@@ -640,7 +640,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/GetTimeLeft()
 	if(isnull(SSticker.timeLeft))
-		return max(0, start_at - world.time)
+		return max(600, start_at - world.time)
 	return timeLeft
 
 /datum/controller/subsystem/ticker/proc/SetTimeLeft(newtime)
