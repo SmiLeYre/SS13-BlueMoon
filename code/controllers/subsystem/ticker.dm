@@ -644,7 +644,7 @@ SUBSYSTEM_DEF(ticker)
 	return timeLeft
 
 /datum/controller/subsystem/ticker/proc/SetTimeLeft(newtime)
-	if(newtime >= 0 && isnull(timeLeft))	//remember, negative means delayed
+	if(newtime >= 600 && isnull(timeLeft))	//remember, negative means delayed
 		start_at = world.time + newtime
 	else
 		timeLeft = newtime
