@@ -117,8 +117,6 @@
 	var/obj/item/organ/genital/genital = null
 	var/retaliation_message = FALSE
 
-	var/u_His = user.p_their()
-
 	if(user.is_fucking(partner, CUM_TARGET_THROAT))
 		message = "[pick(
 			"жёстко засовывает свой крепкий орган в горло <b>[partner]</b> и тем самым образом своего партнёра затыкает.",
