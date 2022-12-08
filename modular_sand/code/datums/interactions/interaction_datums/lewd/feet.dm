@@ -9,9 +9,6 @@
 /datum/interaction/lewd/grindface/display_interaction(mob/living/user, mob/living/partner)
 	var/message
 
-	var/u_His = user.p_their()
-	var/t_His = partner.p_their()
-
 	var/shoes = user.get_shoes()
 
 	if(user.is_fucking(partner, GRINDING_FACE_WITH_FEET))

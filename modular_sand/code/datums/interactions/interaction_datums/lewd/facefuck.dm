@@ -17,10 +17,6 @@
 	var/obj/item/organ/genital/genital = null
 	var/retaliation_message = FALSE
 
-	var/u_His = user.p_their()
-	var/t_Him = partner.p_them()
-	var/t_Hes = partner.p_theyre()
-
 	if(user.is_fucking(partner, CUM_TARGET_MOUTH))
 		var/improv = FALSE
 		switch(fucktarget)
@@ -44,7 +40,6 @@
 					improv = TRUE
 			if("penis")
 				if(user.has_penis() || user.has_strapon())
-					var/genital_name = user.get_penetrating_genital_name()
 					message = pick(
 						"грубо трахает \the <b>[partner]</b> в рот с громким чавкающим звуком.",
 						"с силой загоняет свои гениталии в самюу глотку \the <b>[partner]</b>.",
@@ -86,7 +81,6 @@
 					improv = TRUE
 			if("penis")
 				if(user.has_penis() || user.has_strapon())
-					var/genital_name = user.get_penetrating_genital_name()
 					if(user.is_fucking(partner, CUM_TARGET_THROAT))
 						message = "вытягивает свой орган из горла \the <b>[partner]</b> и сладко усмехается."
 					else
@@ -124,9 +118,6 @@
 	var/retaliation_message = FALSE
 
 	var/u_His = user.p_their()
-	var/t_His = partner.p_their()
-	var/t_Him = partner.p_them()
-	var/genital_name = user.get_penetrating_genital_name()
 
 	if(user.is_fucking(partner, CUM_TARGET_THROAT))
 		message = "[pick(

@@ -10,8 +10,6 @@
 /datum/interaction/lewd/do_breastfeed/display_interaction(mob/living/user, mob/living/target)
 	var/message
 	var/u_His = user.p_their()
-	var/u_He = user.p_they()
-	var/t_His = target.p_their()
 	var/obj/item/organ/genital/breasts/milkers = user.getorganslot(ORGAN_SLOT_BREASTS)
 	var/milktype = milkers?.fluid_id
 	var/modifier
