@@ -54,7 +54,7 @@
 	partner.handle_post_sex(LOW_LUST, null, user)
 
 /datum/interaction/lewd/grindmouth
-	description = "Feet grind their mouth."
+	description = "Углубиться своими ножками в рот партнёра."
 	interaction_sound = null
 	require_target_mouth = TRUE
 	require_user_num_feet = 1
@@ -109,7 +109,7 @@
 	partner.handle_post_sex(LOW_LUST, null, user)
 
 /datum/interaction/lewd/footjob
-	description = "Jerk them off with your foot."
+	description = "Подрочить партнёру своей ногой."
 	interaction_sound = null
 	require_user_num_feet = 1
 	require_user_feet = REQUIRE_ANY
@@ -140,7 +140,7 @@
 		partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, user)
 
 /datum/interaction/lewd/footjob/double
-	description = "Jerk them off with both of your feet."
+	description = "Подрочить партнёру своими ножками."
 	require_user_num_feet = 2
 
 /datum/interaction/lewd/footjob/double/display_interaction(mob/living/user, mob/living/partner)
@@ -168,7 +168,7 @@
 		partner.handle_post_sex(NORMAL_LUST, CUM_TARGET_FEET, user)
 
 /datum/interaction/lewd/footjob/vagina
-	description = "Rub their vagina with your foot."
+	description = "Потереть её киску своей ножкой."
 	require_target_vagina = REQUIRE_EXPOSED
 	require_target_penis = null
 

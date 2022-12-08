@@ -79,12 +79,12 @@
 
 	if(require_user_bottomless && !user.is_bottomless())
 		if(!silent)
-			to_chat(user, "<span class='warning'>Your pants are in the way.</span>")
+			to_chat(user, "<span class='warning'>Твоя нижняя часть одежды мешает.</span>")
 		return FALSE
 
 	if(require_user_topless && !user.is_topless())
 		if(!silent)
-			to_chat(user, "<span class='warning'>Your top is in the way.</span>")
+			to_chat(user, "<span class='warning'>Твоя верхняя часть одежды мешает.</span>")
 		return FALSE
 
 	if(require_user_penis)
