@@ -575,3 +575,10 @@
 		var/mob/living/carbon/C = user
 		if(isjellyperson(C))
 			pick(playsound(C, 'sound/effects/meatslap.ogg', 50, 1),playsound(C, 'sound/effects/gib_step.ogg', 50, 1))
+
+/datum/emote/sound/bear_fight
+	key = "bearfight"
+	key_third_person = "seems to be very angry"
+	message = "seems to be very angry."
+	message_param = "angry at %t."
+	sound = 'sound/voice/human/bear_fight.ogg'
