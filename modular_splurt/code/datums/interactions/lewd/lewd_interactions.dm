@@ -1,7 +1,7 @@
 //help
 /datum/interaction/lewd
 
-	var/unholy = FALSE //То же самое что и эстрим вербы но гораздо хуже.
+	var/unholy = FALSE //То же самое что и эстрим вербы, но гораздо хуже.
 
 	var/require_user_legs
 	var/require_user_num_legs
@@ -118,4 +118,4 @@
 /mob/living/list_interaction_attributes(mob/living/LM)
 	. = ..()
 	if(has_belly(REQUIRE_EXPOSED))
-		. += "...have a belly"
+		. += "...обладает выпуклым животом."
