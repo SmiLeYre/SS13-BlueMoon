@@ -77,7 +77,7 @@
 							message = "кончает в сосок \<b>[partner]</b>!."
 							target_gen = partner.getorganslot(ORGAN_SLOT_BREASTS)
 						else
-							message = "кончает на \грудь и шею <b>[partner]</b>."
+							message = "кончает на грудь и шею <b>[partner]</b>."
 							if((partner.client?.prefs.cit_toggles & BREAST_ENLARGEMENT) && c_partner)
 								target_gen = new /obj/item/organ/genital/breasts
 								target_gen.Insert(c_partner)
@@ -85,13 +85,13 @@
 							target_gen.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS))
 					if(CUM_TARGET_URETHRA)
 						cumin = TRUE
-						message = "кончает в \уретру <b>[partner]</b>!"
+						message = "кончает в уретру <b>[partner]</b>!"
 						if(c_partner)
 							target_gen = partner.getorganslot(ORGAN_SLOT_PENIS)
 							target_gen.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS))
 					if(CUM_TARGET_THIGHS)
 						if(partner.has_legs() >= 2)
-							message = "кончает на \бёдра <b>[partner]</b>!"
+							message = "кончает на бёдра <b>[partner]</b>!"
 						else
 							message = "кончает... как-то..."
 					if(CUM_TARGET_BELLY)
@@ -111,7 +111,7 @@
 								gut.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS), target_orifice)
 
 					if(CUM_TARGET_ARMPIT)
-						message = "кончает в \подмышку <b>[partner]</b>"
+						message = "кончает в подмышку <b>[partner]</b>"
 
 					if(CUM_TARGET_MOUTH, CUM_TARGET_THROAT, CUM_TARGET_VAGINA, CUM_TARGET_ANUS)
 						if(c_partner)
@@ -136,10 +136,10 @@
 						if(CUM_TARGET_NIPPLE)
 							cumin = TRUE
 							if(partner.has_breasts())
-								message = "кончает в \сосок <b>[partner]</b>!."
+								message = "кончает в сосок <b>[partner]</b>!."
 								target_gen = partner.getorganslot(ORGAN_SLOT_BREASTS)
 							else
-								message = "кончает на \грудь и шею <b>[partner]</b>."
+								message = "кончает на грудь и шею <b>[partner]</b>."
 								if((partner.client?.prefs.cit_toggles & BREAST_ENLARGEMENT) && c_partner)
 									target_gen = new /obj/item/organ/genital/breasts
 									target_gen.Insert(partner)
@@ -148,13 +148,13 @@
 								target_gen.climax_modify_size(src, last_genital)
 						if(CUM_TARGET_URETHRA)
 							cumin = TRUE
-							message = "кончает в \уретру <b>[partner]</b>!"
+							message = "кончает в уретру <b>[partner]</b>!"
 							if(c_partner)
 								target_gen = partner.getorganslot(ORGAN_SLOT_PENIS)
 								target_gen.climax_modify_size(src, last_genital)
 						if(CUM_TARGET_THIGHS)
 							if(partner.has_legs() >= 2)
-								message = "кончает \между бёдер <b>[partner]</b>!"
+								message = "кончает между бёдер <b>[partner]</b>!"
 							else
 								message = "кончает... Как-то..."
 						if(CUM_TARGET_BELLY)
@@ -256,7 +256,7 @@
 	var/message
 	var/obj/item/organ/genital/peepee = null
 	var/lust_increase = NORMAL_LUST
-	var/t_His = p_their()
+	//var/t_His = p_their()
 	var/t_Him = p_them()
 
 	if(user.is_fucking(src, CUM_TARGET_MOUTH))
@@ -284,7 +284,7 @@
 						improv = TRUE
 				if("penis")
 					if(user.has_penis() || user.has_strapon())
-						var/genital_name = user.get_penetrating_genital_name()
+						//var/genital_name = user.get_penetrating_genital_name()
 						message = pick(
 							"отсасываетсам себе!.",
 							"обводит языком свой член.",
@@ -316,7 +316,7 @@
 					improv = TRUE
 			if("penis")
 				if(user.has_penis() || user.has_strapon())
-					var/genital_name = user.get_penetrating_genital_name()
+					//var/genital_name = user.get_penetrating_genital_name()
 					message = pick(
 						"отсасываетсам себе!.",
 						"обводит языком свой член.",
@@ -336,7 +336,7 @@
 				"погружает своё лицо в свои же бёдра и активно облизывается, проявляя у своей промежности всё больше влаги.",
 				"целует свои нежные лепестки и довольно улыбается, удовлетворённо вздыхая.",
 				"толкается своим языком к своей же собственной киске и проводит его кончик к самому клитору.",
-				"пробует свою киску на вкус."
+				"пробует свою киску на вкус.",
 			)
 			peepee = null
 		else
@@ -368,7 +368,7 @@
 /mob/living/proc/do_breastfuck_self(mob/living/user)
 	var/message
 	var/t_His = p_their()
-	var/genital_name = get_penetrating_genital_name()
+	//var/genital_name = get_penetrating_genital_name()
 
 	if(is_fucking(user, CUM_TARGET_BREASTS))
 		message = "[pick("fucks [t_His] breasts.",
@@ -404,8 +404,8 @@
 
 /mob/living/proc/nuzzle_belly(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/list/belly_names = list("живот", "животик", "брюхо")
+	//var/u_His = p_their()
+	//var/list/belly_names = list("живот", "животик", "брюхо")
 	var/list/nuzzles = list(
 		"толкается своим лицом в живот [target]]",
 		"целует животик [target]",
@@ -422,8 +422,10 @@
 
 	if(is_fucking(partner, CUM_TARGET_BELLY))
 		message = "[pick(
-			"трахает \живот <b>[partner]</b>.",
-			"суёт свой пенис глубоко в мягкий \живот <b>[partner]</b>",
+			"pounds \the <b>[partner]</b>'s belly.",
+			"shoves their [genital_name] deep into \the <b>[partner]</b>'s soft tummy",
+			"thrusts in and out of \the <b>[partner]</b>'s navel.",
+			"goes balls deep into \the <b>[partner]</b>'s gut over and over again.")]"
 	else
 		message = "pulls his [genital_name] up and slides it into \the <b>[partner]</b>'s receiving navel."
 		set_is_fucking(partner, CUM_TARGET_BELLY, getorganslot(ORGAN_SLOT_PENIS))
@@ -437,7 +439,7 @@
 
 /mob/living/proc/do_breastsmother(mob/living/target)
 	var/message
-	var/u_His = p_their()
+	//var/u_His = p_their()
 	var/list/lines = list(
 		"сдавливает лицо <b>[target]</b> между своих сисек",
 		"прижимает свои сиськи к лицу <b>[target]</b>",
@@ -999,11 +1001,11 @@
 /mob/living/proc/suck_shit(mob/living/target)
 	var/message
 	var/list/hell
-	var/t_His = target.p_their()
-	var/u_His = p_their()
+	//var/t_His = target.p_their()
+	//var/u_His = p_their()
 
-	var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
-	var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
+	//var/list/stank = list("greasy", "rancid", "pungent", "rotten", "boiling hot", "wet", "nose-burning", "heavy", "dense", "thick", "stinky", "stenchy", "warm")
+	//var/list/stankhole = list("greasy", "stinky", "dirty", "gassy", "brapping", "noisy", "quaking", "musky")
 
 	if(is_fucking(target, GRINDING_FACE_WITH_ANUS))
 		hell = list(
@@ -1025,7 +1027,7 @@
 
 /mob/living/proc/piss_over(mob/living/target)
 	var/message
-	var/u_His = p_their()
+	//var/u_His = p_their()
 	var/list/hell = list(
 		"опустошает свой мочевой пузырь на тело <b>[target]</b> покрывая его тёплой мочёй",
 		"покрывает тело <b>[target]</b> золотым дождём ",
@@ -1040,8 +1042,8 @@
 /mob/living/carbon/proc/piss_mouth(mob/living/target)
 	var/message
 	var/pee_pee = (has_penis(REQUIRE_EXPOSED) ? getorganslot(ORGAN_SLOT_PENIS) : (has_vagina(REQUIRE_EXPOSED) ? getorganslot(ORGAN_SLOT_VAGINA) : null))
-	var/u_His = p_their()
-	var/t_Him = target.p_them()
+	//var/u_His = p_their()
+	//var/t_Him = target.p_them()
 	var/list/hell = list(
 		"опустошает свой мочевой пузырь в рот <b>[target]</b> наполняя его тёплой мочёй",
 		"покрывает глотку <b>[target]</b> золотым дождём ",
