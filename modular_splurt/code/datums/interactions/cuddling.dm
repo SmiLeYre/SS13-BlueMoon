@@ -1,5 +1,5 @@
 /datum/interaction/cuddle
-	description = "Обнимашки!."
+	description = "Обнимашки!"
 	simple_message = "USER обнимает TARGET."
 	simple_style = "lewd"
 	needs_physical_contact = TRUE
@@ -11,10 +11,10 @@
 		"USER нежно обнимает TARGET.",
 		"USER бережно обнимает TARGET.",
 		"USER тыкается носом в TARGET.",
-		"USER нежно тыкается носиком TARGET.",
-		"USER бережно тыкается носиком TARGET.",
+		"USER нежно тыкается носиком в TARGET.",
+		"USER бережно тыкается носиком в TARGET.",
 		"USER тискает TARGET.",
-		"USER хватает TARGET в свои нежные объятья.",
+		"USER хватает TARGET в свои нежные объятия.",
 		"USER нежно тискается с TARGET.",
 		"USER бережно тискается с TARGET.",
 	)
