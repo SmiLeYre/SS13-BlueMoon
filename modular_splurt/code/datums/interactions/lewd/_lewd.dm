@@ -74,10 +74,10 @@
 					if(CUM_TARGET_NIPPLE)
 						cumin = TRUE
 						if(partner.has_breasts())
-							message = "cums iside \the <b>[partner]</b>'s nipple!."
+							message = "кончает в сосок <b>[partner]</b>!."
 							target_gen = partner.getorganslot(ORGAN_SLOT_BREASTS)
 						else
-							message = "cums on \the <b>[partner]</b>'s chest and neck."
+							message = "кончает на грудь и шею <b>[partner]</b>."
 							if((partner.client?.prefs.cit_toggles & BREAST_ENLARGEMENT) && c_partner)
 								target_gen = new /obj/item/organ/genital/breasts
 								target_gen.Insert(c_partner)
@@ -85,23 +85,23 @@
 							target_gen.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS))
 					if(CUM_TARGET_URETHRA)
 						cumin = TRUE
-						message = "cums down \the <b>[partner]</b>'s [pick(GLOB.dick_nouns + list("[pick("cock", "dick")]hole", "urethra"))]!"
+						message = "кончает в уретру <b>[partner]</b>!"
 						if(c_partner)
 							target_gen = partner.getorganslot(ORGAN_SLOT_PENIS)
 							target_gen.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS))
 					if(CUM_TARGET_THIGHS)
 						if(partner.has_legs() >= 2)
-							message = "cums right into \the <b>[partner]</b>'s thighs!"
+							message = "кончает на бёдра <b>[partner]</b>!"
 						else
-							message = "cums... somehow..."
+							message = "кончает... как-то..."
 					if(CUM_TARGET_BELLY)
 						cumin = TRUE
 						if(partner.has_belly(REQUIRE_EXPOSED))
-							message = "cums into the <b>[partner]</b>'s navel, [pick(list("making it into a massive pond of jizz", "[p_their()] spunk drooling out of it"))]."
+							message = "кончает в декольте <b>[partner]</b>, [pick(list("создавая там липкую лужу", "жидкость забавно фонтанирует наружу"))]."
 							if(c_partner)
 								target_gen = c_partner.getorganslot(ORGAN_SLOT_BELLY)
 						else
-							message = "cums on the <b>[partner]</b>'s midsection."
+							message = "кончает на тело <b>[partner]</b>."
 						if(c_partner)
 							if(partner.client?.prefs.cit_toggles & BELLY_INFLATION)
 								var/obj/item/organ/genital/belly/gut = partner.getorganslot(ORGAN_SLOT_BELLY)
@@ -111,7 +111,7 @@
 								gut.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS), target_orifice)
 
 					if(CUM_TARGET_ARMPIT)
-						message = "cums under \the <b>[partner]</b>'s armpit"
+						message = "кончает в подмышку <b>[partner]</b>"
 
 					if(CUM_TARGET_MOUTH, CUM_TARGET_THROAT, CUM_TARGET_VAGINA, CUM_TARGET_ANUS)
 						if(c_partner)
@@ -136,10 +136,10 @@
 						if(CUM_TARGET_NIPPLE)
 							cumin = TRUE
 							if(partner.has_breasts())
-								message = "cums iside \the <b>[partner]</b>'s nipple!."
+								message = "кончает в сосок <b>[partner]</b>!."
 								target_gen = partner.getorganslot(ORGAN_SLOT_BREASTS)
 							else
-								message = "cums on \the <b>[partner]</b>'s chest and neck."
+								message = "кончает на грудь и шею <b>[partner]</b>."
 								if((partner.client?.prefs.cit_toggles & BREAST_ENLARGEMENT) && c_partner)
 									target_gen = new /obj/item/organ/genital/breasts
 									target_gen.Insert(partner)
@@ -148,23 +148,23 @@
 								target_gen.climax_modify_size(src, last_genital)
 						if(CUM_TARGET_URETHRA)
 							cumin = TRUE
-							message = "cums down \the <b>[partner]</b>'s [pick(GLOB.dick_nouns + list("[pick("cock", "dick")]hole", "urethra"))]!"
+							message = "кончает в уретру <b>[partner]</b>!"
 							if(c_partner)
 								target_gen = partner.getorganslot(ORGAN_SLOT_PENIS)
 								target_gen.climax_modify_size(src, last_genital)
 						if(CUM_TARGET_THIGHS)
 							if(partner.has_legs() >= 2)
-								message = "cums right into \the <b>[partner]</b>'s thighs!"
+								message = "кончает между бёдер <b>[partner]</b>!"
 							else
-								message = "cums... somehow..."
+								message = "кончает... Как-то..."
 						if(CUM_TARGET_BELLY)
 							cumin = TRUE
 							if(partner.has_belly(REQUIRE_EXPOSED))
-								message = "cums into the <b>[partner]</b>'s navel, [pick(list("making it into a massive pond of jizz", "[p_their()] spunk drooling out of it"))]."
+								message = "кончает в пупок <b>[partner]</b>, [pick(list("создавая там липкую лужу", "жидкость забавно фонтанирует наружу"))]."
 								if(c_partner)
 									target_gen = c_partner.getorganslot(ORGAN_SLOT_BELLY)
 							else
-								message = "cums on the <b>[partner]</b>'s midsection."
+								message = "кончает на тело <b>[partner]</b>."
 							if(c_partner)
 								if(partner.client?.prefs.cit_toggles & BELLY_INFLATION)
 									var/obj/item/organ/genital/belly/gut = partner.getorganslot(ORGAN_SLOT_BELLY)
@@ -256,7 +256,7 @@
 	var/message
 	var/obj/item/organ/genital/peepee = null
 	var/lust_increase = NORMAL_LUST
-	var/t_His = p_their()
+	// var/t_His = p_their()
 	var/t_Him = p_them()
 
 	if(user.is_fucking(src, CUM_TARGET_MOUTH))
@@ -284,26 +284,23 @@
 						improv = TRUE
 				if("penis")
 					if(user.has_penis() || user.has_strapon())
-						var/genital_name = user.get_penetrating_genital_name()
+						// var/genital_name = user.get_penetrating_genital_name()
 						message = pick(
-							"sucks [t_Him] off.",
-							"runs their tongue up the shape of [t_His] [genital_name].",
-							"traces [t_His] [genital_name] with their tongue.",
-							"darts the tip of their tongue around tip of [t_His] [genital_name].",
-							"laps slowly at [t_His] shaft.",
-							"kisses the base of [t_His] shaft.",
-							"takes [t_Him] deeper into their mouth.",
+							"отсасываетсам себе!.",
+							"обводит языком свой член.",
+							"проводит языком вдоль своего члена.",
+							"водит языком вокруг головки своего члена.",
+							"медленно заглатывает свой член.",
+							"целует ствол своего члена.",
+							"заглатывает свой член поглубже.",
 						)
 					else
 						improv = TRUE
 			if(improv)
 				// get confused about how to do the sex
 				message = pick(
-					"licks [t_Him].",
-					"looks a little unsure of where to lick [t_Him].",
-					"runs their tongue between [t_His] legs.",
-					"kisses [t_His] thigh.",
-					"tries their best with [t_Him].",
+					"облизывает себя.",
+					"проводит языком между своих ног.",
 				)
 	else
 		var/improv = FALSE
@@ -311,36 +308,35 @@
 			if("vagina")
 				if(user.has_vagina())
 					message = pick(
-						"buries their face in [t_His] pussy.",
-						"nuzzles [t_His] wet sex.",
-						"finds their face caught between [t_His] thighs.",
-						"kneels down between [t_His] legs.",
-						"grips [t_His] legs, pushing them apart.",
-						"sinks their face in between [t_His] thighs.",
+						"тыкается носом в свою киску",
+						"вылизывает свою киску.",
+						"зажимает свою голову между ног и отлизывает себе.",
 					)
 				else
 					improv = TRUE
 			if("penis")
 				if(user.has_penis() || user.has_strapon())
-					var/genital_name = user.get_penetrating_genital_name()
+					// var/genital_name = user.get_penetrating_genital_name()
 					message = pick(
-						"takes [t_His] [genital_name] into their mouth.",
-						"wraps their lips around [t_His] [genital_name].",
-						"finds their face between [t_His] thighs.",
-						"kneels down between [t_His] legs.",
-						"grips [t_His] legs, kissing at the tip of their [genital_name].",
-						"goes down on [t_Him].",
+						"отсасываетсам себе!.",
+						"обводит языком свой член.",
+						"проводит языком вдоль своего члена.",
+						"водит языком вокруг головки своего члена.",
+						"медленно заглатывает свой член.",
+						"целует ствол своего члена.",
+						"заглатывает свой член поглубже.",
 					)
 				else
 					improv = TRUE
 		if(improv)
 			message = pick(
-				"begins to lick [t_His].",
-				"starts kissing [t_His] thigh.",
-				"sinks down between [t_His] thighs.",
-				"briefly flashes a puzzled look from between [t_His] legs.",
-				"looks unsure of how to handle [t_His] lack of genitalia.",
-				"seems like they were expecting [t_His] to have a cock or a pussy or ... something.",
+				"довольно облизывается и зарывается своим лицом в свою же киску.",
+				"прижимается своим мокрым и достаточно тёплым носиком к своей промежности.",
+				"обнаруживает себя между своими бёдрами и раз за разом пытается сделать себе хорошо.",
+				"погружает своё лицо в свои же бёдра и активно облизывается, проявляя у своей промежности всё больше влаги.",
+				"целует свои нежные лепестки и довольно улыбается, удовлетворённо вздыхая.",
+				"толкается своим языком к своей же собственной киске и проводит его кончик к самому клитору.",
+				"пробует свою киску на вкус.",
 			)
 			peepee = null
 		else
@@ -372,15 +368,15 @@
 /mob/living/proc/do_breastfuck_self(mob/living/user)
 	var/message
 	var/t_His = p_their()
-	var/genital_name = get_penetrating_genital_name()
+	// var/genital_name = get_penetrating_genital_name()
 
 	if(is_fucking(user, CUM_TARGET_BREASTS))
 		message = "[pick("fucks [t_His] breasts.",
-			"grinds their [genital_name] between [t_His] boobs.",
-			"thrusts into [t_His] tits.",
-			"grabs [t_His] breasts together and presses their [genital_name] between them.")]"
+			"молотит свой член между своих сисек.",
+			"трахает собственные сиськи.",
+			"хватает свой член сиськами проталкивает его между ними.")]"
 	else
-		message = "pushes [t_His] breasts together and presses their [genital_name] between them."
+		message = "хватает свой член сиськами проталкивает его между ними."
 		set_is_fucking(user, CUM_TARGET_BREASTS, getorganslot(ORGAN_SLOT_PENIS) ? getorganslot(ORGAN_SLOT_PENIS) : null)
 
 	playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/bang1.ogg',
@@ -394,13 +390,13 @@
 /mob/living/proc/remove_equipment(mob/living/carbon/target)
 	var/obj/item/organ/genital/holder = pick_receiving_organ(target, HAS_EQUIPMENT, "Remove equipment", "What genital?")
 	if(!holder)
-		to_chat(src, "<span class='warning'> You need exposed genitals!</b>")
+		to_chat(src, "<span class='warning'>Нужно обнажить гениталии!</b>")
 		return
 	if(!LAZYLEN(holder.equipment))
-		to_chat(src, "<span class='warning'>You'll have to put something in it first, since it seems to be clean</span>")
+		to_chat(src, "<span class='warning'>Там ничего нет.</span>")
 		return
 
-	var/obj/item/gimme = input(src, "What do you want to remove?", "Remove equipment", null) as null|anything in holder.equipment
+	var/obj/item/gimme = input(src, "Что ты хочешь убрать?", "Убрать предмет", null) as null|anything in holder.equipment
 	if(gimme)
 		holder.remove_equipment(src, gimme)
 
@@ -408,13 +404,13 @@
 
 /mob/living/proc/nuzzle_belly(mob/living/target)
 	var/message
-	var/u_His = p_their()
-	var/list/belly_names = list("stomach", "belly", "gut", "midsection", "rolls")
+	// var/u_His = p_their()
+	var/list/belly_names = list("живот", "животик", "брюхо", "пупок")
 	var/list/nuzzles = list(
-		"rubs [u_His] face all accross [target]'s [pick(belly_names)]",
-		"nuzzles [target]'s [pick(belly_names)][pick(list(" lovingly", ""))]",
-		"shoves [u_His] face into [target]'s [pick(belly_names)] and gives it kisses all over",
-		"licks right into [target]'s [pick(list("belly button", "navel"))]"
+		"толкается своим лицом в [pick(belly_names)] [target]]",
+		"целует [pick(belly_names)] [target]",
+		"толкает своё лицо в [pick(belly_names)] [target] и нежно целует его",
+		"целует и лижет пупок [target]"
 		)
 
 	message = "<span class='lewd'><b>\The [src]</b> [pick(nuzzles)]. </span>"
@@ -426,7 +422,7 @@
 
 	if(is_fucking(partner, CUM_TARGET_BELLY))
 		message = "[pick(
-			"pounds \the <b>[partner]</b>'s belly.",
+			"трахает живот <b>[partner]</b>.",
 			"shoves their [genital_name] deep into \the <b>[partner]</b>'s soft tummy",
 			"thrusts in and out of \the <b>[partner]</b>'s navel.",
 			"goes balls deep into \the <b>[partner]</b>'s gut over and over again.")]"

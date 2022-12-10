@@ -33,8 +33,10 @@
 				if(prob(15))
 					C.bleed(2)
 				if(prob(25))
-					C.adjustOrganLoss(ORGAN_SLOT_EYES,rand(3,7))
-					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
+					C.adjustOrganLoss(ORGAN_SLOT_EYES,rand(10,20))
+					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(7,15))
+				if(prob(1) && istype(partner))
+					partner.adjustBruteLoss(rand(5,7))
 	else
 		message = "forcefully slides [u_His] [genital_name] inbetween \the <b>[partner]</b>'s [partner.has_eyes() ? "eyelid":"eyesocket"]."
 		user.set_is_fucking(partner, CUM_TARGET_EYES, user.getorganslot(ORGAN_SLOT_PENIS))

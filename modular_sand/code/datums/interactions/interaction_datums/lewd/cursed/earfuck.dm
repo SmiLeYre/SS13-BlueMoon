@@ -20,10 +20,10 @@
 
 	if(user.is_fucking(partner, CUM_TARGET_EARS))
 		message = "[pick(
-			"долбится в ушную раковину \the <b>[partner]</b>'s.",
-			"резко и довольно глубоко вводит свой орган в череп \the <b>[partner]</b>'s",
-			"раз за разом толкается в ушную раковину \the <b>[partner]</b>'s.",
-			"заходит своим влажным органом по самые яйца в череп \the <b>[partner]</b>'s снова и снова.")]"
+			"долбится в ушную раковину \the <b>[partner]</b>.",
+			"резко и довольно глубоко вводит свой орган в череп \the <b>[partner]</b>",
+			"раз за разом толкается в ушную раковину \the <b>[partner]</b>.",
+			"заходит своим влажным органом по самые яйца в череп \the <b>[partner]</b> снова и снова.")]"
 		var/client/cli = partner.client
 		var/mob/living/carbon/C = partner
 		if(cli && istype(C))
@@ -31,8 +31,10 @@
 				if(prob(15))
 					C.bleed(2)
 				if(prob(25))
-					C.adjustOrganLoss(ORGAN_SLOT_EARS, rand(3,7))
-					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(3,7))
+					C.adjustOrganLoss(ORGAN_SLOT_EARS, rand(10,20))
+					C.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(7,15))
+				if(prob(1) && istype(partner))
+					partner.adjustBruteLoss(rand(5,7))
 	else
 		message = "с силой загоняет свой орган внутрь ушной раковины \the <b>[partner]</b>'s и громко вздыхает."
 		user.set_is_fucking(partner, CUM_TARGET_EARS, user.getorganslot(ORGAN_SLOT_PENIS))
