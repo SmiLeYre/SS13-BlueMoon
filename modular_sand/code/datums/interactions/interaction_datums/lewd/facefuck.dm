@@ -123,7 +123,7 @@
 			"душит <b>[partner]</b>, снова и снова засовывая свой влажный орган по самые яйца.",
 			"молотит рот <b>[partner]</b> с чавкающим звуком и раз за разом приземляется своими яйцами аккурат в лицо.")]"
 		if(rand(3))
-			partner.emote("задыхается из-за \the [user]")
+			partner.emote("chokes on \the [user]")
 			if(prob(1) && istype(partner)) //Handled on modular_splurt
 				partner.adjustOxyLoss(10)
 		if(partner.a_intent == INTENT_HARM)
