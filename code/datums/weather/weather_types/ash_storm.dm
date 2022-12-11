@@ -5,7 +5,7 @@ GLOBAL_LIST_EMPTY(ash_storm_sounds)
 	name = "ash storm"
 	desc = "An intense atmospheric storm lifts ash off of the planet's surface and billows it down across the area, dealing intense fire damage to the unprotected."
 
-	telegraph_message = "<span class='boldwarning'>Жуткий Стон разносится по ветру. Облака горящего пепла застилают горизонт. Ищите Убежище!</span>"
+	telegraph_message = "<span class='boldwarning'>Жуткий Вой поднялся по округе. Облака горящего пепла застилают горизонт. Ищите Убежище!</span>"
 	telegraph_duration = 300
 	telegraph_overlay = "light_ash"
 
