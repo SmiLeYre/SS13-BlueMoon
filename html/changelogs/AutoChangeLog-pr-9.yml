@@ -1,0 +1,5 @@
+author: PhenyaMomota
+delete-after: true
+changes:
+  - imageadd: Обновление спрайтов для инженерных инструментов
+  - code_imp: Добавление модуляра для BlueMoon
