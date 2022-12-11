@@ -407,10 +407,10 @@
 	//var/u_His = p_their()
 	//var/list/belly_names = list("живот", "животик", "брюхо")
 	var/list/nuzzles = list(
-		"толкается своим лицом в живот [target]]",
-		"целует животик [target]",
-		"толкает своё лицо в живот [target] и нежно целует его",
-		"целует и лижет пупок [target]"
+		"толкается своим лицом в живот [target]!",
+		"целует животик [target].",
+		"толкает своё лицо в живот [target] и нежно целуется!",
+		"целует и лижет пупок [target]."
 		)
 
 	message = "<span class='lewd'><b>\The [src]</b> [pick(nuzzles)]. </span>"
