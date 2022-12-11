@@ -18,4 +18,4 @@
 	if(user.get_lust() >= 3)
 		user.visible_message("<span class='lewd'>\The <b>[user]</b> дарит интенсивный и весьма агрессивный поцелуй для \the <b>[partner]</b>.</span>")
 	else
-		user.visible_message("<span class='lewd'>\The <b>[user]</b> прижимается губами к \the <b>[partner]</b> и глубого того целует.</span>")
+		user.visible_message("<span class='lewd'>\The <b>[user]</b> прижимается губами к \the <b>[partner]</b>, облизывает их своим язычком и глубоко их целует.</span>")
