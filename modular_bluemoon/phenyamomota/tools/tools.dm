@@ -1,9 +1,6 @@
 /obj/item/screwdriver/
 	icon = 'modular_bluemoon/phenyamomota/tools/tools.dmi'
 
-/obj/item/screwdriver/Initialize(mapload)
-	pixel_y = 8
-
 /obj/item/screwdriver/power
 	icon = 'modular_bluemoon/phenyamomota/tools/tools.dmi'
 
