@@ -582,3 +582,4 @@
 	message = "seems to be very angry."
 	message_param = "angry at %t."
 	sound = 'sound/voice/human/bear_fight.ogg'
+	mob_type_allowed_typecache = list(/mob/living/brain, /mob/living/silicon, /mob/living/carbon/human, /mob/camera/aiEye)
