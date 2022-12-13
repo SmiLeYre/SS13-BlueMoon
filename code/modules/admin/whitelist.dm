@@ -7,7 +7,7 @@
 
 	var/datum/db_query/query_get_whitelist = SSdbcore.NewQuery({"
 		SELECT id FROM [format_table_name("whitelist")]
-		WHERE ckey = :key
+		WHERE ckey = :ckey
 	"}, list("ckey" = key)
 	)
 
