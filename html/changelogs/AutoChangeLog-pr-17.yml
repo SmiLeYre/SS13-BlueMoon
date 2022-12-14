@@ -1,7 +1,0 @@
-author: ActuallyALovelyGrave
-delete-after: true
-changes:
-  - balance: Bluespace miner requires 10 crystals instead of 5.
-  - balance: Bluespace miner now is a high-tier tech, requiring 20K points instead
-      of 7.5K.
-  - balance: Bluespace miner now produces 50% less resources.
