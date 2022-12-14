@@ -7,7 +7,7 @@
 
 /datum/interaction/lewd/mount/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	var/u_His = user.p_their()
+	//var/u_His = user.p_their()
 	var/genital_name = partner.get_penetrating_genital_name()
 
 	if(partner.is_fucking(user, CUM_TARGET_VAGINA))
@@ -33,7 +33,7 @@
 
 /datum/interaction/lewd/mountass/display_interaction(mob/living/user, mob/living/partner)
 	var/message
-	var/u_His = user.p_their()
+	//.var/u_His = user.p_their()
 	var/genital_name = partner.get_penetrating_genital_name()
 
 	if(partner.is_fucking(user, CUM_TARGET_ANUS))
