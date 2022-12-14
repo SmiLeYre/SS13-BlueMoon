@@ -20,6 +20,7 @@ MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien/humanoid/sentinel -0.75
 MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien/humanoid/drone -0.5
 MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien/humanoid/royal/praetorian 0
 MULTIPLICATIVE_MOVESPEED /mob/living/carbon/alien/humanoid/royal/queen 2
+MULTIPLICATIVE_MOVESPEED /mob/living/silicon/robot -0.25
 
 ## The above, only when a mob is FLOATING
 MULTIPLICATIVE_MOVESPEED_FLOATING /mob/living/carbon -0.5
