@@ -1,5 +1,5 @@
 /datum/interaction/lewd/grindface
-	description = "Потереть лицо ножками."
+	description = "Потереть лицо партнёра ножками."
 	interaction_sound = null
 	require_target_mouth = TRUE
 	require_user_num_feet = 1

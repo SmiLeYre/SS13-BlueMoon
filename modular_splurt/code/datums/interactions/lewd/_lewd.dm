@@ -91,7 +91,7 @@
 							target_gen.climax_modify_size(src, getorganslot(ORGAN_SLOT_PENIS))
 					if(CUM_TARGET_THIGHS)
 						if(partner.has_legs() >= 2)
-							message = "кончает на бёдра <b>[partner]</b>!"
+							message = "кончает между бёдрами <b>[partner]</b>!"
 						else
 							message = "кончает... как-то..."
 					if(CUM_TARGET_BELLY)
@@ -318,7 +318,7 @@
 				if(user.has_penis() || user.has_strapon())
 					//var/genital_name = user.get_penetrating_genital_name()
 					message = pick(
-						"отсасываетсам себе!.",
+						"отсасывает сам себе!",
 						"обводит языком свой член.",
 						"проводит языком вдоль своего члена.",
 						"водит языком вокруг головки своего члена.",
@@ -422,10 +422,10 @@
 
 	if(is_fucking(partner, CUM_TARGET_BELLY))
 		message = "[pick(
-			"pounds \the <b>[partner]</b>'s belly.",
-			"shoves their [genital_name] deep into \the <b>[partner]</b>'s soft tummy",
-			"thrusts in and out of \the <b>[partner]</b>'s navel.",
-			"goes balls deep into \the <b>[partner]</b>'s gut over and over again.")]"
+			"с силой загоняет свои гениталии в живот <b>[partner]</b>.",
+			"трётся своим членом о живот <b>[partner]</b> с чавкающим скрипом.",
+			"смотрит в глаза в ухмылке <b>[partner]</b> и довольно водит своим органом вдоль живота партнёра.",
+			"держится за плечи <b>[partner]</b> и с усилием потирается пенисом о живот партнёра.")]"
 	else
 		message = "pulls his [genital_name] up and slides it into \the <b>[partner]</b>'s receiving navel."
 		set_is_fucking(partner, CUM_TARGET_BELLY, getorganslot(ORGAN_SLOT_PENIS))
